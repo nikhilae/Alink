@@ -32,7 +32,7 @@ jobs:
 
 
     - name: Maven Clean Install
-      run: mvn clean install -DskipTests -pl core -am
+      run: clean install -DskipTests -pl core -am
 
     - name: Run Maven Tests
       run: mvn -pl core test -Dtest=com.aliba ba.alink.operator.batch.audio.ExtractMfccFeatureBatchOpTest#testExtractMfccFeatureBatchOp
